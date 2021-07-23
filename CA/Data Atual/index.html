@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="style.css">
+   <title>Current Date</title>
+</head>
+<body>
+   <div class="container">
+      <p>Data Atual</p>
+      <h3 id="date-today"></h3>
+   </div>
+
+   <script>
+      let dateToday = document.querySelector('#date-today');
+
+      let today = new Date();
+      let day = `${today.getDate() < 10 ? "0" : ""}${today.getDate()}`;
+      let month = `${(today.getMonth() + 1) < 10 ? "0" : ""}${today.getMonth() + 1}`
+      let year = today.getFullYear();
+      
+      dateToday.textContent = `${day}/${month}/${year}`
+   </script>
+</body>
+</html>
