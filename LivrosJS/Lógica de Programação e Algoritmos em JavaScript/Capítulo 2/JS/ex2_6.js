@@ -9,7 +9,7 @@ function valorAPagar() {
    var tempoConvertido = Math.ceil(tempo / 15);
    var totalAPagar = tempoConvertido * valor;
 
-   outResposta.textContent = "Valor a Pagar R$:" + totalAPagar.toFixed(2);
+   outResposta.textContent = "Valor a Pagar R$: " + totalAPagar.toFixed(2);
 }
 
 var valorTotal = document.querySelector("#total");
