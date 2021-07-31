@@ -13,7 +13,7 @@
 
       var raiz = Math.sqrt(numero);
 
-      if (raiz == Math.floor(raiz)) {
+      if (raiz % 1 == 0) {
          outResposta.textContent = "Raiz: " + raiz;
       } else {
          outResposta.textContent = "Não há raiz exata para o número " + numero;
@@ -22,5 +22,4 @@
 
    var btExibir = document.querySelector("#btExibir");
    btExibir.addEventListener("click", calcularRaiz);
-
 })();
